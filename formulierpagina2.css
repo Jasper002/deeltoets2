@@ -1,0 +1,305 @@
+*{
+    font-family: calibri, sans-serif;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #f1f1f1;
+    color: #3f3f3f;
+    width: 100%;
+    height: 100%;
+}
+
+body > header{
+    background: #fecb2f;
+    display: block;
+    margin-top: 3em;
+}
+
+header > h1{
+    text-align: center;
+}
+
+header > h1 + p{
+    text-align: center;
+}
+
+header > img{
+    margin-top: 0;
+    width: 15rem;
+}
+
+nav {
+    background: #fecb2f;
+    box-shadow: 0.5em 0.1em 0.5em #888888;
+    left: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    float: right;
+    margin-right: 2em;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: 5s;
+}
+
+nav a:hover {
+    color: #fecb2f;
+    transform: scale(2) skewX(-20deg);
+}
+nav a:active {
+    color: #cea530;
+}
+
+header > form{
+    float: right;
+}
+
+body > header > h1{
+    text-shadow: .1em .1em #d9ad29;
+}
+
+body > main > h1{
+    text-shadow: .1em .1em #e3e3e3;
+}
+
+main{
+    display: block;
+    margin: 0 auto;
+    width: 35em;
+}
+
+main > p{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+label{
+    margin-left: .5em;
+}
+
+legend{
+    margin-left: .5em;
+}
+
+fieldset + fieldset{
+    margin-bottom: 2em;
+}
+
+label + label{
+    margin-bottom: .5em;
+}
+
+form > fieldset > label{
+    display: block;
+}
+
+form > fieldset > fieldset > label{
+    display: block;
+}
+
+main > form > input[type=submit]{
+    background: #fecb2f;
+    border-radius: 1em 2em 1em 2em;
+    box-shadow: .1em .1em .5em .1em #888888;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+/*Eerste fieldset andere kleur dan de tweede etc.*/
+
+main > section > h2{
+    margin-top: 2em;
+    text-align: center;
+    transition: 1s;
+}
+
+main > section > h2:hover{
+    transform: rotate(360deg);
+}
+
+dt, dl{
+    margin-top: 1em;
+/*    margin-bottom: 1em;*/
+}
+
+h4, h3{
+    margin-top: 1em;
+}
+
+/*footer eerste section*/
+
+body > h2{
+    text-align: center;
+}
+
+body > section{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+body > section > article{
+    margin-bottom: 3em;
+    padding-right: 5em;
+}
+
+body > section > article:nth-child(1){
+    margin-left: 5em;
+    order: 1;
+}
+
+body > section > article:nth-child(2){
+    order: 2;
+}
+
+body > section > article:nth-child(3){
+    order: 3;
+}
+
+body > footer{
+    background: #fecb2f;
+}
+
+footer > section > ul > li > a{
+    font-size: 1.5em;
+}
+
+footer > section > ul > li > ul{
+    font-size: 1em;
+}
+
+aside{
+    display: inline-block;
+    float: right;
+    margin-left: 1em;
+    margin-top: -205%;
+    padding-right: 1em;
+    width: 26%;
+}
+
+aside > section{
+    background: #DB9721;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+body > footer{
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+/*sitemap*/
+body > footer > section:nth-child(1){
+    flex-basis: 30em;
+    flex-grow: 1;
+    order: 1;
+}
+
+/*contact*/
+body > footer > section:nth-child(2){
+    background: #DB9721;
+    flex-grow: 1;
+    order: 2;
+}
+
+/*search*/
+body > footer > section:nth-child(3){
+    background: #DB9721;
+    flex-grow: 1;
+    order: 4;
+}
+
+/*about*/
+body > footer > section:nth-child(4){
+    flex-grow: 1;
+    flex-shrink: 2;
+    order: 3;
+
+}
+
+/*credits*/
+body > footer > section:nth-child(5){
+    flex-grow: 2;
+    flex-shrink: 1;
+    order: 5;
+}
+
+body > footer > p{
+    background: #F5B23D;
+    border-radius: 1em 1em 0 0;
+    bottom: 0;
+    position: fixed;
+    right: 3em;
+}
+
+body > footer > p a{
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+
+@media (max-width: 30em) {
+    body > section,
+    body > footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 30em) {
+    form[method=post]{
+        width: 40%;
+        background: red;
+    }
+}
+
+@media (max-width: 30em) {
+    main > p{
+        width: 40%;
+        margin-left: 1em;
+        background: red;
+    }
+}
+
+@media (max-width: 36em) {
+    form[method=post],
+    main > p{
+        width: 80%;
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 39em) {
+    header > h1 {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 65em) {
+    body > section,
+    body > footer{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 77em) {
+    body > aside{
+        display: none;
+    }
+}
