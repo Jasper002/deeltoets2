@@ -1,0 +1,304 @@
+*{
+    font-family: calibri, sans-serif;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background: #f1f1f1;
+    color: #3f3f3f;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    transition: 2s;
+    width: 100%;
+}
+
+section img{
+    border-radius: .5em;
+    display: block;
+}
+
+img:hover{
+    transform: rotate(360deg)
+}
+
+form {
+    float: right;
+}
+
+nav {
+    background: #fecb2f;
+    left: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: 0.5em 0.1em 0.5em #888888;
+}
+
+nav li {
+    display: inline;
+    float: right;
+    margin-right: 2em;
+}
+
+nav a{
+    color: #fafafa;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #3f3f3f;
+    transform: rotate(360deg);
+}
+nav a:active {
+    color: #2a2a2a;
+}
+
+body > header{
+    background: #fecb2f;
+}
+
+body > header h1{
+    margin-top: .5em;
+}
+
+h1 {
+    font-size: 3.998em;
+    text-align: center;
+    transition: .5s;
+}
+
+article > header > h1{
+    text-shadow: .1em .1em #e3e3e3;
+}
+
+body > header > h1{
+    text-shadow: .1em .1em #d9ad29;
+}
+
+header > h1 + p{
+    text-align: center;
+}
+
+h1:hover{
+    transform: rotate(360deg);
+}
+
+h2 {
+    font-size: 2.827em;
+    text-align: center;
+    transition: .5s;
+}
+
+h2:hover{
+    transform: rotate(360deg);
+}
+
+h3 {
+    font-size: 1.999em;
+    transition: .5s;
+}
+
+h3:hover{
+    transform: rotate(360deg);
+}
+
+h4 {
+    font-size: 1.414em;
+    transition: .5s;
+}
+
+h4:hover{
+    transform: rotate(360deg);
+}
+
+body > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div > main{
+    order: 1;
+    flex-basis: 20%;
+    flex-grow: 2;
+/*    width: 100%;*/
+}
+
+div > main > article{
+    margin-left: 2em;
+    margin-right: 2em;
+    flex-grow: 1;
+}
+
+div > aside{
+    order: 3;
+    flex-basis: 20%;
+    flex-grow: 1;
+/*    width: 100%;*/
+    margin-left: 1em;
+    font-size: 100%;
+}
+
+div > aside > section{
+    margin-left: .5em;
+    margin-right: 1em;
+}
+
+
+div > section{
+    order: 2;
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+div > section > article{
+    margin-left: .5em;
+    margin-right: 1em;
+}
+
+body > footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fecb2f;
+}
+
+
+/*sitemap*/
+body > footer > section:nth-child(1){
+    order: 1;
+}
+
+/*contact*/
+body > footer > section:nth-child(2){
+    order: 2;
+    background: #DB9721;
+}
+
+body > footer > section:nth-child(2) h2{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+body > footer > section:nth-child(2) p{
+    margin-left: .2em;
+    margin-right: .2em;
+    padding-bottom: .2em;
+}
+
+/*search*/
+body > footer > section:nth-child(3){
+    order: 4;
+    background: #DB9721;
+}
+
+body > footer > section:nth-child(3) h2{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+body > footer > section:nth-child(3) form{
+/*    float: none;*/
+    margin-left: .2em;
+}
+
+/*about*/
+body > footer > section:nth-child(4){
+    order: 3;
+}
+
+body > footer > section:nth-child(4) p{
+    margin-right: .2em;
+    margin-left: .2em;
+}
+
+/*credits*/
+body > footer > section:nth-child(5){
+    order: 5;
+}
+
+body > footer > section:nth-child(5) h2{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+body > footer > section:nth-child(5) p{
+    margin-left: .2em;
+    margin-right: .2em;
+}
+
+body footer ul{
+    padding-bottom: 1em;
+}
+
+body>footer>section>ul>li>a{
+    font-size: 1.5em;
+    margin-right: .2em;
+}
+
+body>footer li{
+/*    display: inline;*/
+    margin-left: .2em;
+    margin-right: .1em;
+}
+
+body>footer a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+body>footer a:hover {
+    transform: rotate(360deg);
+}
+
+body > footer > p{
+    background: #DB9721;
+    border-radius: 1em 1em 0 0;
+    bottom: 0;
+    position: fixed;
+    right: 3em;
+}
+
+body > footer > p a{
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+
+@media (max-width: 55em) {
+    header > h1 {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width: 30em) {
+    body > div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 30em) {
+    body > footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 65em) {
+    body > div{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 65em) {
+    body > footer{
+        flex-wrap: wrap;
+    }
+}
